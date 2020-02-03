@@ -1,0 +1,28 @@
+<h2>Realizados</h2>
+
+<% @todos_open.each do |todo| %>
+    <div class="card-deck">
+        <%= image_tag todo.picture , class:'card-omg-top', 'height': '500px', 'width': '200px'%>
+        <div class="card">
+        
+        <%= todo.description %>
+        <%= todo.completed %> 
+        
+    </div>
+    </div>
+<% end %>
+
+<h2>Pendientes</h2>
+
+<% @todos_close.each do |todo| %>
+    <div class="card-deck">
+    <%= image_tag todo.picture , class:'card-omg-top', 'height': '500px', 'width': '200px'%>
+    
+        <div class="card">
+        
+        <%= todo.description %>
+        <%= todo.completed %>
+        
+    </div>
+    </div>
+<% end %>

@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+.card-deck{
+    display: block;
+}
+
+.card{
+    display: inline-block;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}

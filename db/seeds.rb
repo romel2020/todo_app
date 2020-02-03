@@ -6,8 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Todo.destroy_all
-
 Todo.create(description: "first step", completed: true, picture:'https://sites.google.com/site/animalesverteinvert/_/rsrc/1386109002162/evaluacion/Avaluacio.jpg')
 Todo.create(description: "first step", completed: true, picture:'https://sites.google.com/site/animalesverteinvert/_/rsrc/1386109002162/evaluacion/Avaluacio.jpg')
 Todo.create(description: "second step", completed: false, picture: 'https://sites.google.com/site/animalesverteinvert/_/rsrc/1386109002162/evaluacion/Avaluacio.jpg')

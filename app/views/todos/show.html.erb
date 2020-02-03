@@ -1,18 +1,10 @@
 <div class="card-deck">
-  <% @todos.each do |todo|%>
     <div class="card">
-       <%= image_tag todo.picture , class:'card-omg-top', 'height': '500px', 'width': '200px'%>
+       <%= image_tag @todos.picture , class:'card-omg-top', 'height': '500px', 'width': '200px'%>
        <div class="card-body">
-            <p class="card-text"><%= todo.description %></p>
-            <p class="card-text"><%= todo.completed ? 'Realizado' : 'Pendiente' %></p>
-            <%# <%= link_to "Edit", edit_beer_path(beer) %>
-            <%# <%= link_to "Delete", delete_beer_path(beer), method: :delete, data: {confirm: 'Are you sure?'} %>
-            <%# <%= link_to "Show", beer_path(beer) %>
+            <p class="card-text"><%= @todos.description %></p>
+            <p class="card-text"<%= @todos.completed ?  'True' : 'False' %>></p>
       </div>
     </div>
-    <% end %>
 </div>
-
-
-<%= link_to "New_todos", new_todos_path %>
-
+<%= link_to 'Back to main', root_path %>

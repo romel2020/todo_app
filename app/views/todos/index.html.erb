@@ -1,3 +1,5 @@
+<div class="container">
+
 <div class="card-deck">
   <% @todos.each do |todo|%>
     <div class="card">
@@ -5,14 +7,20 @@
        <div class="card-body">
             <p class="card-text"><%= todo.description %></p>
             <p class="card-text"><%= todo.completed ? 'Realizado' : 'Pendiente' %></p>
-            <%# <%= link_to "Edit", edit_beer_path(beer) %>
-            <%# <%= link_to "Delete", delete_beer_path(beer), method: :delete, data: {confirm: 'Are you sure?'} %>
-            <%# <%= link_to "Show", beer_path(beer) %>
-      </div>
+             <%= link_to 'Edit', edit_todo_path(todo) %>
+             <% if todo.completed == false%> <br>
+             <%= link_to 'Complete', complete_todo_path(todo) %> <br>
+             <%else %>
+             <p>Completed</p>
+             <% end %>
+             <%= link_to 'Show', show_todo_path(todo) %> <br>
+             <%= link_to 'Delete', delete_todo_path(todo), method: :delete, data: { confirm: 'Are you sure?' } %>
+       </div>
     </div>
     <% end %>
 </div>
 
 
-<%= link_to "New_todos", new_todos_path %>
+
+
 
