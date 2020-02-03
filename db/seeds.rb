@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Todo.destroy_all
+
+Todo.create(description: "first step", completed: true, picture:'https://sites.google.com/site/animalesverteinvert/_/rsrc/1386109002162/evaluacion/Avaluacio.jpg')
+Todo.create(description: "first step", completed: true, picture:'https://sites.google.com/site/animalesverteinvert/_/rsrc/1386109002162/evaluacion/Avaluacio.jpg')
+Todo.create(description: "second step", completed: false, picture: 'https://sites.google.com/site/animalesverteinvert/_/rsrc/1386109002162/evaluacion/Avaluacio.jpg')
+Todo.create(description: "third step", completed: true, picture:'https://sites.google.com/site/animalesverteinvert/_/rsrc/1386109002162/evaluacion/Avaluacio.jpg')
+Todo.create(description: "fourth step", completed: false, picture: 'https://sites.google.com/site/animalesverteinvert/_/rsrc/1386109002162/evaluacion/Avaluacio.jpg')
+Todo.create(description: "fifth step", completed: true, picture:'https://sites.google.com/site/animalesverteinvert/_/rsrc/1386109002162/evaluacion/Avaluacio.jpg')
+Todo.create(description: "sixth step", completed: false, picture:'https://sites.google.com/site/animalesverteinvert/_/rsrc/1386109002162/evaluacion/Avaluacio.jpg')
+Todo.create(description: "eighth step", completed: true, picture:'https://sites.google.com/site/animalesverteinvert/_/rsrc/1386109002162/evaluacion/Avaluacio.jpg')
+Todo.create(description: "ninth step", completed: false, picture:'https://sites.google.com/site/animalesverteinvert/_/rsrc/1386109002162/evaluacion/Avaluacio.jpg')
+Todo.create(description: "tenth step", completed: true, picture:'https://sites.google.com/site/animalesverteinvert/_/rsrc/1386109002162/evaluacion/Avaluacio.jpg')
+
