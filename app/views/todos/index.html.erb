@@ -2,22 +2,22 @@
 
 <div class="card-deck">
   <% @todos.each do |todo|%>
-    <div class="card">
+    <div class="card my-3">
        <%= image_tag todo.picture , class:'card-omg-top', 'height': '500px', 'width': '200px'%>
        <div class="card-body">
-            <p class="card-text"><%= todo.description %></p>
+            <p class="card-text"><%= todo.description %></p> <br>
             <p class="card-text"><%= todo.completed ? 'Realizado' : 'Pendiente' %></p>
              <%= link_to 'Edit', edit_todo_path(todo) %>
              <% if todo.completed == false%> <br>
              <%= link_to 'Complete', complete_todo_path(todo) %> <br>
-             <%else %>
-             <p>Completed</p>
+             
              <% end %>
              <%= link_to 'Show', show_todo_path(todo) %> <br>
-             <%= link_to 'Delete', delete_todo_path(todo), method: :delete, data: { confirm: 'Are you sure?' } %>
+             <%= link_to 'Delete', delete_todo_path(todo), method: :delete, data: { confirm: 'Are you sure?' } %> <br>
        </div>
     </div>
     <% end %>
+</div>
 </div>
 
 
